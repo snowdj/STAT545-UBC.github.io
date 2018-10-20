@@ -1,77 +1,84 @@
-# Topics
+## Topic list
 
-All course content will be indexed here, with course-related logistics de-emphasized.
+This material gets updated during Sept - Nov each year on a rolling basis.
 
-Until we get rolling, feel free to look at older material that will appear here in updated form:
+  * Non-STAT545-specific advice for [getting help](http://stat545.com/help-general.html).
+  * Get your R act together
+    - [Install R and Rstudio](block000_r-rstudio-install.html) (or update! get current!)
+    - [Basic R and RStudio, workspace, working directory, RStudio Project](block002_hello-r-workspace-wd-project.html)
+    - [Test drive R Markdown](block007_first-use-rmarkdown.html)
+  * [Git, GitHub, and RStudio](http://happygitwithr.com)
+    - Content now here: <http://happygitwithr.com>. Install Git, install a Git client or GUI, establish pull/push connection from computer to GitHub in the shell, establish GitHub connection via RStudio, credential caching, troubleshooting.
+    - [Take possession of your STAT 545 repo](git08_claim-stat545-repo.html)
+  * Data analysis 1: One data frame (or "tibble"), the Tidyverse
+    - [Basic care and feeding of data in R](block006_care-feeding-data.html): data frames (and tibbles) are awesome.
+    - [Introduction to dplyr](block009_dplyr-intro.html): filter, select, the pipe.
+    - [dplyr functions for a single dataset](block010_dplyr-end-single-table.html): All the single table verbs.
+    - [Tidy data using Lord of the Rings](https://github.com/jennybc/lotr-tidy#readme): tidy data, tidyr.
+    - [Writing and reading files](block026_file-out-in.html).
+  * Data analysis 2: Doing remedial work on certain vector types
+    - [Be the boss of your factors, using forcats](block029_factors.html)
+    - [Character vectors](block028_character-data.html): basic manipulation and regular expressions.
+    - [Character encoding](block032_character-encoding.html)
+    - *placeholder for date-times; TLDR; consider the lubridate package*
+  * Data analysis 3: Bring info from a secondary source into your main tibble
+    - [When one tibble is not enough](block033_working-with-two-tables.html): Overview of binds, joins, lookups.
+    - Join (a.k.a. merge) two tables: [dplyr join cheatsheet](bit001_dplyr-cheatsheet.html) with comic characters and publishers
+    - [Table look up](bit008_lookup.html)
+    <!--
+    - [Split-Apply-Combine](block024_group-nest-split-map.html) with the tidyverse (nesting, list-columns, map inside mutate) *under development*.
+    -->
+  * R as a programming language
+    - [R objects (beyond data.frames) and indexing](block004_basic-r-objects.html)
+    - Writing your own R functions [Part 1](block011_write-your-own-function-01.html): get something that works, check arguments
+    - Writing your own R functions [Part 2](block011_write-your-own-function-02.html): generalize, set default argument values
+    - Writing your own R functions [Part 3](block011_write-your-own-function-03.html):`NA` handling, `...`, unit test
+    - [Function-writing Practicum](block012_function-regress-lifeexp-on-year.html): fit a linear model and return estimated coefficients
+  * [All the graph things](graph00_index.html)
+    - R graphics landscape *[slides](https://speakerdeck.com/jennybc/ggplot2-tutorial)*
+    - [`ggplot2` tutorial](https://github.com/jennybc/ggplot2-tutorial), heavy on code and examples
+    - [Do's and don'ts of making effective graphs](block015_graph-dos-donts.html)
+    - [R Graph Catalog](http://shiny.stat.ubc.ca/r-graph-catalog/), a visual, clickable index of 100+ figures + `ggplot2` code to make them
+    - [Using colors in R](block018_colors.html)
+    - [Taking control of qualitative colors in `ggplot2`](block019_enforce-color-scheme.html)
+    - [Secrets of a happy graphing life](block016_secrets-happy-graphing.html)
+    - [Writing figures to file](block017_write-figure-to-file.html)
+    - [Multiple plots on a page](block020_multiple-plots-on-a-page.html)
+  * [All the package things](packages00_index.html)
+    - [slides](https://speakerdeck.com/jennybc/ubc-stat545-2015-writing-your-first-r-package)
+    - [System preparation for package development](packages01_system-prep.html)
+    - [Write your own R package](packages06_foofactors-package.html)
+  * [All the automation things](automation00_index.html)
+    - <a href="automation01_slides/index.html" target="_blank">slides</a>
+    - [Special considerations for Windows](automation02_windows.html)
+    - [Test drive `Make`](automation03_make-test-drive.html) from a shell and RStudio
+    - [Hands-on activity](automation04_make-activity.html)
+    - [Example pipelines](automation00_index.html#more-examples)
+  * Get data from the web
+    - [Slides](webdata01_slides.html)
+    - Lesson 1: [Use API-wrapping packages](webdata02_activity.html)
+    - Lesson 2: [DIY web data](webdata03_activity.html)
+  * [All the Shiny things](shiny00_index.html)
+    - [Slides on Google Docs](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit?usp=sharing)
+    - [Shiny tutorial with hands-on activity to build app with BC Liquor Store dataset](shiny01_activity.html)
+  * Deprecated material that I no longer use. But last I checked, it's not actually *wrong*.
+      - Overview of split-apply-combine: [slides on speakerdeck](https://speakerdeck.com/jennybc/ubc-stat545-split-apply-combine-intro)
+    - [Split-apply-combine with `dplyr::do()`](block023_dplyr-do.html)
+    - Example: [a wrapper around `lm` to use with `dplyr::do()`](block025_lm-poly.html)
+    - [Split-apply-combine with `plyr`](block013_plyr-ddply.html)
+    - [Why and how to tidy data](bit002_tidying-lotr-data.html)
+    - Be the boss of your factors: [2015 version](block014_factors.html), pre-forcats
+    - [2014 Write an R package, hands-on activity, part 1](packages02_activity.html)
+    - [2014 Write an R package, hands-on activity, part 2](packages03_activity_part2.html)
 
-  * [Clean index](http://www.stat.ubc.ca/~jenny/STAT545A/quick-index.html) into topics covered in 2013
-  * [GitHub repository](https://github.com/jennybc/STAT545A_2013) for 2013 course materials
-  
-### Updated topics
+## Short random things
 
-  * [Install Git and more](block001_git-install.html)
-  * [Install R and Rstudio](block000_r-rstudio-install.html)
-  * [Git configuration and credential caching](block003_git-config-credential-cache.html)
-  * [Test your installation and configuration of Git, GitHub, and RStudio](block005_first-use-git-rstudio.html)
-  * [Basic R and RStudio, workspace, working directory, RStudio Project](block002_hello-r-workspace-wd-project.html)
-  * [R objects (beyond data.frames) and indexing](block004_basic-r-objects.html)
-  
-### Course material
-
-  * [Class meeting 001](cm001_course-intro-sw-install-account-signup.html) deals with "What is data science? What is data carpentry?" and includes links re: use of Twitter in academia.
-  * [Class meeting 002](cm002_r-rstudio-intro.html) provides some Deep Thoughts about data analytic work, then shifts into a hands-on intro to R and RStudio.
-  * [Class meeting 003](cm003_r-objects-git-toe-dip.html) Started basic flavors of R objects; Git(Hub) and (R) Markdown crash course so first HW0 can be submitted. All hands-on.
-  * [General homework guidelines](hw00_homework-guidelines.html)
-  * [Homework 01](hw01_edit-README.html) Edit `README.md`
-
-### Short random things
-
+  * [Draw the rest of the owl](bit007_draw-the-rest-of-the-owl.html), a pep talk for building off simple examples
+  * [Using `dplyr` + `purrr` + `tidyr`](https://github.com/jennybc/analyze-github-stuff-with-r) to analyze data about GitHub repos via the [`gh` package](https://github.com/gaborcsardi/gh)
+  * [Using `dplyr` + `purrr` + `tidyr` + `xml2`](https://github.com/jennybc/manipulate-xml-with-purrr-dplyr-tidyr) to tame the annoying XML from Google Sheets
+  * [Make browsing your GitHub repos more rewarding](bit006_github-browsability-wins.html)
+  * [sheet](bit001_dplyr-sheet.html) for `dplyr` join functions
+  * [Workflow for sending email with R and `gmailr`](https://github.com/jennybc/send-email-with-r)
+  * [Store an API key as an environment variable](bit003_api-key-env-var.html)
   * [Lesson I contributed](bit002_tidying-lotr-data.html) to [Data Carpentry](http://software-carpentry.org/blog/2014/05/our-first-data-carpentry-workshop.html) on tidying data
-  * [Cheatsheet](bit001_dplyr-cheatsheet.html) for `dplyr` join functions
 
-### What's coming
-
-Topics traditionally covered in STAT 545A, with light updating:
-
-  * ~~Introduction to R and the [RStudio IDE](http://www.rstudio.com/products/rstudio/)~~ *done*
-  * ~~R scripts and workspaces, RStudio Projects; how to get your work done~~ *done*
-  * Creating reports from R scripts and [R Markdown](http://rmarkdown.rstudio.com), using [`knitr`](http://yihui.name/knitr/)
-  * ~~Deep thoughts about data analytic work~~ *done*
-  * Care and feeding of data in R; data frames
-  * R objects -- beyond data frames
-  * Indexing, subsetting
-  * Data aggregation; "apply" functions, [`plyr`](http://plyr.had.co.nz), [`dplyr`](https://github.com/hadley/dplyr)
-  * How to help yourself, how to ask questions to get useful answers
-  * How to get data in and out of R, staying as "open" as possible
-  * How to get figures out of R
-  * Be the boss of your factors, i.e. categorical variables
-  * Use of color in R
-  * Single quantitative variable: visualizations and descriptive statistics
-  * Two quantitative variables: visualizations and descriptive statistics
-  * Categorical variables: visualizations and descriptive statistics
-  * Multivariate visualizations
-  * Visualizing and summarizing data when "grouped"
-  * Coding style and project organization
-  
-New topics for STAT 545A and/or STAT 547M will be selected from here:
-
-  * Bash shell / unix basics, personal system administration.
-  * Version control with Git, collaboration via [GitHub](https://github.com)
-  * The tabular data mentality, "tidy" data, data reshaping
-  * Regular expressions, programmatic transformation and searching of character data
-  * Writing R functions
-  * `ggplot2` will be used instead of `lattice` for visualization
-  * Creating interactive pages, apps, and graphics via [Shiny](http://shiny.rstudio.com) and (maybe) [`ggvis`](http://ggvis.rstudio.com)
-  * Unit testing, at least as a mentality. Maybe will cover formal unit testing, e.g. `testthat`
-  * Stats particularly useful in exploration (and often neglected in standard intro stats courses)
-    - robust summary statistics
-    - robust regression
-    - smoothing
-    - density estimation
-    - cluster analysis, PCA, SVD, MDS
-  * Embrace the web:
-    - getting data from the web, e.g. using an API or via scraping
-    - exposing your hard work on the web (data, code, results)
-  * Distributing data and code to the world via an R package
-  * Automating an analytical pipeline, e.g. via `Make`.
-  

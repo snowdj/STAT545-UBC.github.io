@@ -60,7 +60,7 @@ To inspect this, try out RStudio's completion facility: type the first few chara
 Make another assignment
 
 ```r
-jenny_rocks <- 2^3
+jenny_rocks <- 2 ^ 3
 ```
 
 Let's try to inspect:
@@ -70,7 +70,7 @@ jennyrocks
 ```
 
 ```
-## Error: object 'jennyrocks' not found
+## Error in eval(expr, envir, enclos): object 'jennyrocks' not found
 ```
 
 ```r
@@ -78,7 +78,7 @@ jeny_rocks
 ```
 
 ```
-## Error: object 'jeny_rocks' not found
+## Error in eval(expr, envir, enclos): object 'jeny_rocks' not found
 ```
 
 Implicit contract with the computer / scripting language: Computer will do tedious computation for you. In return, you will be completely precise in your instructions. Typos matter. Case matters. Get better at typing.
@@ -103,7 +103,7 @@ seq(1, 10)
 ##  [1]  1  2  3  4  5  6  7  8  9 10
 ```
 
-The above also demonstrates something about how R resolves function arguments. You can always specify in `name = value` form. But if you do not, R attempts to resolve by position. So above, it is assumed that we want a sequence `from = 1` that goes `to = 1`. Since we didn't specify step size, the default value of `by` in the function definition is used, which ends up being 1 in this case. For functions I call often, I might use this resolve by position for the first
+The above also demonstrates something about how R resolves function arguments. You can always specify in `name = value` form. But if you do not, R attempts to resolve by position. So above, it is assumed that we want a sequence `from = 1` that goes `to = 10`. Since we didn't specify step size, the default value of `by` in the function definition is used, which ends up being 1 in this case. For functions I call often, I might use this resolve by position for the first
 argument or maybe the first two. After that, I always use `name = value`.
 
 
@@ -143,7 +143,7 @@ date()
 ```
 
 ```
-## [1] "Mon Sep  8 00:42:27 2014"
+## [1] "Mon Sep  5 22:38:59 2016"
 ```
 
 Now look at your workspace -- in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:
@@ -154,9 +154,9 @@ objects()
 ```
 
 ```
-## [1] "jenny_rocks"                "metadata"                  
-## [3] "this_is_a_really_long_name" "x"                         
-## [5] "y"                          "yo"
+## [1] "jenny_rocks"                "this_is_a_really_long_name"
+## [3] "x"                          "y"                         
+## [5] "yo"
 ```
 
 ```r
@@ -164,9 +164,9 @@ ls()
 ```
 
 ```
-## [1] "jenny_rocks"                "metadata"                  
-## [3] "this_is_a_really_long_name" "x"                         
-## [5] "y"                          "yo"
+## [1] "jenny_rocks"                "this_is_a_really_long_name"
+## [3] "x"                          "y"                         
+## [5] "yo"
 ```
 
 If you want to remove the object named `y`, you can do this
@@ -226,7 +226,7 @@ Restart RStudio. In the Console you will see a line like this:
 [Workspace loaded from ~/.RData]
 ```
 
-indicating that your workspace has been restored. Look in the Workspace pane and you'll see the same objects as before. In the History tab of the same pane, you should also see your command history.You're back in business. This way of starting and stopping analytical work will not serve you well for long but it's a start.
+indicating that your workspace has been restored. Look in the Workspace pane and you'll see the same objects as before. In the History tab of the same pane, you should also see your command history. You're back in business. This way of starting and stopping analytical work will not serve you well for long but it's a start.
 
 #### Working directory
 
@@ -257,7 +257,7 @@ But there's a better way. A way that also puts you on the path to managing your 
 
 ### RStudio projects
 
-Keeping all the files associated with a project organized together -- input data, R scripts, analytical results, figures -- is such a wise and common practice that RStudio has built-in support for this via it's _projects_.
+Keeping all the files associated with a project organized together -- input data, R scripts, analytical results, figures -- is such a wise and common practice that RStudio has built-in support for this via its _projects_.
 
 [Using Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 
@@ -270,7 +270,6 @@ I created a directory and, therefore RStudio project, called `swc` in my `tmp` d
 
 ```r
 setwd("~/tmp/swc")
-getwd()
 ```
 
 Now check that the "home" directory for your project is the working directory of our current R process:
@@ -294,7 +293,7 @@ y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
 ```
 
 ```
-## [1] 0.4961
+## [1] 0.4616799
 ```
 
 ```r
@@ -303,15 +302,15 @@ plot(x, y)
 abline(a, b, col = "purple")
 ```
 
-![plot of chunk toy-line](./block002_hello-r-workspace-wd-project_files/figure-html/toy-line.png) 
+![](block002_hello-r-workspace-wd-project_files/figure-html/toy-line-1.png)<!-- -->
 
 ```r
 dev.print(pdf, "toy_line_plot.pdf")
 ```
 
 ```
-## pdf 
-##   2
+## quartz_off_screen 
+##                 2
 ```
 
 Let's say this is a good start of an analysis and your ready to start preserving the logic and code. Visit the History tab of the upper right pane. Select these commands. Click "To Source". Now you have a new pane containing a nascent R script. Click on the floppy disk to save. Give it a name ending in `.R` or `.r`, I used `toy-line.r` and note that, by default, it will go in the directory associated with your project.

@@ -1,12 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  /* background: #ccc; */
-}
- 
 .nav {
+  font-size: 14px;
   position: relative;
-  margin-top: 10px;
+  margin: 10px 0 20px;
 }
 
 .nav .nav-logo {
@@ -23,7 +18,7 @@ body {
   margin: 0;
 }
 .nav li {
-  font-family: 'Oswald', sans-serif;
+  font-family: sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -38,15 +33,27 @@ body {
 }
  
 .nav a:hover {
+  color: #fff;
   background-color: #005f5f;
+  text-decoration: none;
 }
  
 .nav a.active {
+  color: #fff;
+  text-decoration: none;
   background-color: #fff;
   color: #444;
   cursor: default;
 }
  
+.footer {
+  font-size: 0.8em;
+  margin: 30px 0 10px;	
+  padding-top: 10px;
+  border-top: 1px #eee solid;
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   .nav li {
     width: 120px;

@@ -6,40 +6,94 @@ output:
       after_body: include/nothing.html
 ---
 
-[Jennifer (Jenny) Bryan](http://www.stat.ubc.ca/~jenny/), lead instructor
+**Only includes pre-2018 iterations**. See the <http://stat545.com/Classroom> site for the current list of people.
+
+### 2017 staff
+
+Vincenzo Coia, instructor (mostly for first half/545)
+
+- <vincen.coia@stat.ubc.ca>
+- [\@VincenzoCoia](https://twitter.com/vincenzocoia)
+- [LinkedIn](https://www.linkedin.com/in/vincenzocoia/)
+
+Giulio Valentino Dalla Riva (mostly for second half/547)
+
+- <giulio.riva@stat.ubc.ca>
+- [\@ipnosimmia](https://twitter.com/ipnosimmia)
+
+### 2016 staff
+
+Jennifer (Jenny) Bryan, lead instructor
 
   * <jenny@stat.ubc.ca>
-  * [\@JennyBryan](https://twitter.com/JennyBryan)
+  * [\@JennyBryan](https://twitter.com/JennyBryan), Twitter as myself
+  * [\@STAT545](https://twitter.com/STAT545), Twitter as STAT 545 instructor
   * [GitHub](https://github.com/jennybc)
 
-Dean Attali, TA for STAT 545A
+Sam Hinshaw, lead TA for STAT 545A and STAT 547M, Bioinformatics PhD  
+Johannes Rebane, School of Population and Public Health MSc  
+Erica Acton, Genome Science and Technology PhD  
+Ogan Mancarci, Bioinformatics PhD  
 
-  * Office Hours: Mon 11:00am - 1:00pm and Wed 11:00am - 12:00pm (__note__ shorter hours on Wed!) in [ESB](http://www.maps.ubc.ca/PROD/index_detail.php?show=y,n,n,n,n,y&bldg2Search=n&locat1=225) 3174, across from main STAT office
-  * <daattali@gmail.com>
-  * [\@daattali](http://twitter.com/daattali)
-  * [GitHub](https://github.com/daattali)
-
-[Julia Gustavsen](http://www.juliagustavsen.com), TA-at-large
-
-  * <jgustavsen@eos.ubc.ca>
-  * [\@JuliaGustavsen](http://twitter.com/JuliaGustavsen)
-  * [Github](https://github.com/jooolia)
-
-[Shaun Jackman](http://sjackman.ca), TA-at-large
+[Shaun Jackman](http://sjackman.ca)
 
   * <sjackman@gmail.com>
   * [\@sjackman](http://twitter.com/sjackman)
   * [GitHub](https://github.com/sjackman)
 
-Bernhard Konrad, TA-at-large
+### 2015 staff
 
-  * <konradbe@math.ubc.ca>
+Jenny Bryan
+
+[Dean Attali](http://deanattali.com), co-lead TA for STAT 545A and STAT 547M
+
+  * <daattali@gmail.com>
+  * [\@daattali](http://twitter.com/daattali)
+  * [GitHub](https://github.com/daattali)
+
+[Kieran Samuk](http://ksamuk.github.io), co-lead TA for STAT 545A and STAT 547M
+
+  * <samuk@zoology.ubc.ca>
+  * [\@ksamuk](http://twitter.com/ksamuk)
+  * [GitHub](https://github.com/ksamuk)
+
+Additional TAs
+
+  * Derek Chiu, Statistics MSc
+  * Ogan Mancarci, Bioinformatics PhD
+  * Chen Yang, Bioinformatics PhD
+  * Erica Acton, Genome Science and Technology PhD
+  * Nicolas Coutin, Biochemistry and Molecular Biology PhD
+  * Magda Price, Reproductive and Developmental Sciences Program PhD
+
+### 2014 staff
+
+[Julia Gustavsen](http://www.juliagustavsen.com)
+
+  * <j.gustavsen@gmail.com>
+  * [\@JuliaGustavsen](http://twitter.com/JuliaGustavsen)
+  * [GitHub](https://github.com/jooolia)
+
+[Shaun Jackman](http://sjackman.ca)
+
+  * <sjackman@gmail.com>
+  * [\@sjackman](http://twitter.com/sjackman)
+  * [GitHub](https://github.com/sjackman)
+
+Bernhard Konrad
+
+  * <bernhard.konrad@gmail.com>
   * [\@BernhardKonrad](https://twitter.com/BernhardKonrad)
   * [GitHub](https://github.com/BernhardKonrad)
 
-Gloria (Luolan) Li, TA-at-large
+Gloria (Luolan) Li
 
   * <lli@bcgsc.ca>
   * [\@LuolanLi](https://twitter.com/LuolanLi)
   * [GitHub](https://github.com/gloriali)
 
+Andrew MacDonald
+
+  * a.a.m.macdonald[at]gmail.com
+  * [\@polesasunder](https://twitter.com/polesasunder)
+  * [GitHub](https://github.com/aammd)
